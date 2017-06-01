@@ -1,0 +1,19 @@
+Release 3.0.4
+
+Replace the following files.
+- Replace: assets/js/scripts.js & assets/js/scripts.min.js
+- Replace: assets/css/theme-style.css & assets/css/theme-style.min.css
+
+Changes:
+- NEW: Added new Travel Blog demo (demo-travel-blog.htm & demo-travel-blog-post.htm)
+- NEW: Added new jobs homepage (index-jobs.htm)
+- NEW: Added new corporate homepage variation (index-corporate.htm)
+- NEW: Added new working contact form with PHPMailer (contact.php) - (requested by aleksasidorina)
+- NEW: Added new .overlay-gradient & .overlay-gradient-flip classes for gradient overlays
+- NEW: Added .form-control-transparent class to removing background colour & borders
+- NEW: Added .form-control-dark class for use with transparent class when control is on dark background
+- NEW: Added new typewriter effect functionality (elements-typeit.htm)
+- NEW: Added new counters functionality (elements-counters.htm)
+= NEW: Added new arrow dividers/points (elements-dividers.htm)
+- NEW: Premium team stock photos worth $24 (index-corporate.htm)
+- UPDATED: Made w-* CSS classes responsive ie. w-md-5 or w-lg-100

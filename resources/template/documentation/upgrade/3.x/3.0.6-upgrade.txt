@@ -1,0 +1,15 @@
+Release 3.0.6
+
+Replace the following files.
+- Replace: assets/js/scripts.js & assets/js/scripts.min.js
+- Replace: assets/css/theme-style.css & assets/css/theme-style.min.css
+- Replace: features.htm, blog-post.htm, shop-product.htm, index-corporate.htm
+- Replace: all usage of .icon-op-* classes with .op-*
+
+Changes:
+- NEW: Full Sass & Gulp integration, developer & novice friendly, ultimate control over your CSS
+- UPDATED: Slider Revolution 5.4.1 update
+- UPDATED: removed .icon-op-* classes in favour of .op-* classes as they do the same thing
+- BUGFIX: Fixed image zoom functionality (shop-product.htm)
+- BUGFIX: Side by side features fixes (index-corporate.htm)
+- BUGFIX: Blog post tags on white background fix (blog-post.htm)

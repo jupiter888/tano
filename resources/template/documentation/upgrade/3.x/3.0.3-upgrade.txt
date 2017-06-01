@@ -1,0 +1,33 @@
+Release 3.1
+
+Replace the following files.
+- Replace: assets/js/scripts.js & assets/js/scripts.min.js
+- Replace: assets/css/theme-style.css & assets/css/theme-style.min.css
+- Replace: assets/plugins/slider-revolution + update all slides
+- Sticky header trigger/wrapper now wraps .search-form & .header so search form is sticky
+- Animate.css is now loaded on demand, if you all in on all pages add it manually to <head>
+
+Changes:
+- NEW: Added new Shop UI kit, pages & demo
+- NEW: Added 4 new one pager scrolling homepage versions (index-onepager.htm)
+- NEW: Added 5 footer variations, 6 options in total
+- NEW: Added new full screen “promo” header functionality (index-promo-header.htm)
+- NEW: Added 3 new slider slides (index.htm)
+- NEW: Added new background icon & icon rotate functionality (elements-iconsets.htm)
+- NEW: Added 7 new header variations (header-nav-left.htm, header-bottom.htm, header-transparent-dark.htm, header-transparent-primary.htm, header-translucent.htm, header-translucent-dark.htm, header-translucent-primary.htm)
+- NEW: Made .header-transparent fully transparent & added new .header-ontop class to make navbar show above highlight region (header-transparent.htm) 
+- NEW: Footer variations
+- NEW: 13 new colour variations added (colours.htm)
+- NEW: Added new .header-compact-sticky body class for compact header on sticky
+- NEW: New rounded form controls & input groups (elements-forms.htm  & elements-forms-input-groups.htm)
+- NEW: Added new dropdown helper classes: .dropdown-menu-nobullets removes bullets from submenus
+- NEW: Opacity helper classes .op-(1-9)
+- NEW: .text-slab class to make font Roboto Slab font
+- NEW: Added position css helper classes: .pos-BREAKPOINT-relative, .pos-BREAKPOINT-absolute, .pos-BREAKPOINT-static, .pos-BREAKPOINT-fixed, .pos-t, .pos-b, .pos-l, .pos-r
+- NEW: Added collaspe sidebar menu demos (elements-navs.htm)
+- NEW: Added owl carousel thumbnail support (elements-carousels.htm)
+- NEW: Image zoom functionality added (shop-product.htm)
+- NEW: Added jQuery countdown effect (shop-product.htm)
+- UPDATED: Slider Revolution plugin updated to version 5.0
+- UPDATED: Extend w-* & h-* spacers from 5-100 in steps of 5
+- UPDATED: .owl-nav-over is now called .owl-nav-over-lg with .owl-nav-over being default size, also added new .owl-nav-over-hover class to only show nav on hover.

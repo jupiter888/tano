@@ -1,0 +1,19 @@
+Release 3.0.4
+
+Replace the following files.
+- Replace: assets/js/scripts.js & assets/js/scripts.min.js
+- Replace: assets/css/theme-style.css & assets/css/theme-style.min.css
+- If you need IE9 support please read the browser-support.txt file
+
+Changes:
+- NEW: Added cube portfolio premium plugin worth $16 (index-photographer.htm)
+- NEW: New restaurant homepage demo (index-restaurant.htm)
+- NEW: New photography homepage demo (index-photographer.htm)
+- NEW: Add support for tabs & pills within dropdowns & mega menus 
+- NEW: Add magnific popup transition effect
+- NEW: Support for tabs in mega menus
+- UDPATED: Improved structure script.js to make function calls context aware so they work with ajax calls
+- UPDATED: Added support for script/plugin loading for pages in subfolders. Add data-plugins-localpath=“LOCAL-PATH” to your body tag
+- UPDATED: jQuery to 1.2.4 
+- BUFIX: fixed sticky header overlapping side mobile menu
+- BUFIX: fixed mobile menu showing behind content on iOS

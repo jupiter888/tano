@@ -1,0 +1,23 @@
+Release 3.1
+
+Replace the following files.
+- Replace: assets/js/scripts.js & assets/js/scripts.min.js
+- Replace: assets/css/theme-style.css & assets/css/theme-style.min.css
+- Bootstrap 4.0.0 Alpha 6: the -xs infix has been removed from col-*, float-*, text align & display classes so for example float-xs-right is now simply float-right, text-xs-center would be just text-center & col-xs-6 is just col-6. sm, md, lg, and xl still remain.
+- Bootstrap 4.0.0 Alpha 6: .navbar-toggleable classes are now applied to the .navbar element instead of navbar .collapse element
+- Bootstrap 4.0.0 Alpha 6: tabs & dropdown are now active/open with the a new .show class rather than .in or .open 
+- Added .header-btn-right class for float header buttons to the right with flexbox
+- Flexbox: header now uses flexbox grid for header layout and vertical alignment, see: https://v4-alpha.getbootstrap.com/utilities/flexbox/
+- Flexbox: nav-inline class has been remove as navs are now inline by default
+- Dropped .pa-* & .ma-* classes in favour of the Bootstrap .p-* & .m-* spacers
+- Spacer amounts have changed so values 1 & 2 will actually reduce the padding or margin values
+
+Changes:
+- Update to Bootstrap 4.0.0 Alpha 6, see a full list of changes here: https://github.com/twbs/bootstrap/issues/20939 and the “Bootstrap 4.0.0 Alpha 6:” items in the AppStrap upgrade notes
+- NEW: Flexbox support added!
+- NEW: Added responsive spacer utils so you can control margins & padding per breakpoint
+- NEW: Added new .modal-fs class for fullscreen modals (elements-modals.htm)
+- Inline with Bootstrap 4.0.0 Alpha 6 Internet Explorer 9 & below support is dropped. Use AppStrap 2.5.6 (included) if you need Internet Explorer 9 support.
+- Dropped .pa-* & .ma-* classes in favour of the Bootstrap .p-* & .m-* spacers
+- Updated spacer utils to reflect Bootstrap changes (elements-spacers.hm)
+- Modal background opacity fix

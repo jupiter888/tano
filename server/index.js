@@ -1,6 +1,6 @@
 var express= require('express');
 var app= express();
-var dirSite= __dirname + "../site";
+var dirSite= __dirname + "/../site";
 
 
 

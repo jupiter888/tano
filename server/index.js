@@ -1,6 +1,7 @@
 var express= require('express');
+//automatically uses main as default layout 
 var handlebars= require("express-handlebars").create({
-    defaultLauout: "main"
+    defaultLayout: "main"
 });
 
 var app= express();
@@ -9,12 +10,16 @@ app.engine("handlebars", handlebars.engine);
 app.set("port",process.env.PORT || 3000);
 app.set("view engine", "handlebars");
 
-
-var dirSite= __dirname + "/site";
-
-
-
 app.set('port', process.env.PORT ||3000);
+
+//when getting home route, uses hbars engine to 
+//render the view of home
+app.get('/', function(req,res) {
+        res.render('home');
+});
+
+
+
 
 //below is to map static assets for the theme i chose
 app.use(
@@ -40,8 +45,8 @@ app.use(function(req,res) {
 
 app.listen(app.get("port"), function(){
   console.log(
-           'Express Server is started at: http://localhost:' +
+           'Express Server is now started at: http://localhost:' +
         app.get('port') +
-        '/ ; press ctrl-c to terminate'
+        '/ ; press ctrl-c to terminate or just throw the laptop in some water'
     );
 });

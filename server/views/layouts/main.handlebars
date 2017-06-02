@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--      partial for header -->
+  {{> head }}
+  
+  <!-- ======== @Region: body ======== -->
+  <body class="page page-onepager header-compact-sticky page-index-onepager navbar-layout-default">
+<!--    partial for page-loader-->
+    {{> page-loader }}
+    
+    <a href="#content" id="top" class="sr-only">Skip to content</a> 
+    
+<!--    partial for header-->
+    {{> header }}
+      
+<!--  entry for the view in to the layout-->
+    {{{body}}}
+    
+
+<!--      partial for footer -->
+  {{> footer }}
+      
+    <!--Hidden elements - excluded from jPanel Menu on mobile-->
+    <div class="hidden-elements jpanel-menu-exclude">
+      <!--@modal - signup modal-->
+      <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Sign Up
+              </h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form action="signup.htm">
+                <div class="form-group">
+                  <h5>
+                    Price Plan
+                  </h5>
+                  <select class="form-control">
+                    <option>Basic</option>
+                    <option>Pro</option>
+                    <option>Pro +</option>
+                  </select>
+                </div>
+                <hr />
+                
+                <h5>
+                  Account Information
+                </h5>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-first-name">First Name</label>
+                  <input type="text" class="form-control" id="signup-first-name" placeholder="First name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-last-name">Last Name</label>
+                  <input type="text" class="form-control" id="signup-last-name" placeholder="Last name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-username">Userame</label>
+                  <input type="text" class="form-control" id="signup-username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-email">Email address</label>
+                  <input type="email" class="form-control" id="signup-email" placeholder="Email address">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-password">Password</label>
+                  <input type="password" class="form-control" id="signup-password" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" value="term" class="form-check-input">
+                    I agree with the Terms and Conditions. 
+                  </label>
+                </div>
+                <hr />
+                <button class="btn btn-primary" type="submit">Sign up</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <small>Already signed up? <a href="login.htm">Login here</a>.</small>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      
+      <!--@modal - login modal-->
+      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Login
+              </h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form action="login.htm">
+                <div class="form-group">
+                  <label class="sr-only" for="login-email">Email</label>
+                  <input type="email" id="login-email" class="form-control email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="login-password">Password</label>
+                  <input type="password" id="login-password" class="form-control password" placeholder="Password">
+                </div>
+                <button type="button" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <small>Not a member? <a href="#" class="signup">Sign up now!</a></small>
+              <br />
+              <small><a href="#">Forgotten password?</a></small>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+    </div>
+<!--  partial for js includes -->
+    {{> script }}
+  </body>
+</html>

@@ -143,4 +143,4 @@ gulp.task('watch', function() {
 
 
 // Default tasks
-gulp.task('default', ['compile-js', 'compile-scss', 'compile-plugins-css', 'prettify', 'compress-imgs', 'watch']);
+gulp.task('default', ['compile-js', 'compile-scss', 'compile-plugins-css', 'prettify', 'compress-imgs']);

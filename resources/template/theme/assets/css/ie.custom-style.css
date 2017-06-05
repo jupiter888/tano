@@ -26,6 +26,7 @@
  // 
  /////////////////////////////////////////////////////////////////////*/
 
+
 /*
  * --------------------------------------------------
  * 1. General Elements
@@ -52,11 +53,13 @@
   /* 5. Footer wrapper */
 }
 
+
 /*
  * --------------------------------------------------
  * 2. Colours
  *-------------------------------------------------- 
  */
+
 
 /*
  * --------------------------------------------------
@@ -64,7 +67,9 @@
  *--------------------------------------------------
  */
 
+
 /* Extra small devices (phones, less than 768px) */
+
 
 /* No media query since this is the default in Bootstrap */
 
@@ -84,6 +89,7 @@
   /* X-Large devices (1200px and up). Mixin: media-breakpoint-up(xl) */
 }
 
+
 /* max-width */
 
 @media (max-width: 575px) {
@@ -101,6 +107,7 @@
 @media (max-width: 1199px) {
   /* X-Large devices (1200px and down). Mixin: media-breakpoint-down(lg) */
 }
+
 
 /* target one breakpoint */
 
@@ -120,11 +127,13 @@
   /* Extra large devices (large desktops, 1200px and up). Mixin: media-breakpoint-only(xl) */
 }
 
+
 /* span multiple screenwidths */
 
 @media (min-width: 768px) {
   /* From medium to large (between 768px and 1199px). Mixin: media-breakpoint-between(md, xl)  */
 }
+
 
 /*
  * --------------------------------------------------

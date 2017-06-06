@@ -4,12 +4,21 @@
       <!--Header upper region-->
       <div class="header-upper">
         <!--Show/hide trigger for #hidden-header -->
-
         <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
         <div class="header-inner container">
           <!--user menu-->
           <div class="header-block-flex flex-first mr-auto">
-            <nav class="nav nav-sm header-block-flex">
+          </div>
+          <!--social media icons-->
+          <div class="nav nav-icons header-block flex-last">
+            <!--@todo: replace with company social media details-->
+            <a href="#" class="nav-link"> <i class="fa fa-twitter-square icon-1x"></i> <span class="sr-only">Twitter</span> </a>
+            <a href="#" class="nav-link"> <i class="fa fa-facebook-square icon-1x"></i> <span class="sr-only">Facebook</span> </a>
+            <a href="#" class="nav-link"> <i class="fa fa-linkedin-square icon-1x"></i> <span class="sr-only">Linkedin</span> </a>
+            <a href="#" class="nav-link"> <i class="fa fa-google-plus-square icon-1x"></i> <span class="sr-only">Google plus</span> </a>
+              <div class="header-divider header-divider-sm"></div>
+              <nav class="nav nav-sm header-block-flex">
+              <a class="nav-link text-xs text-uppercase hidden-sm-down" href="#donate-modal" data-toggle="modal">Donate</a> 
               <a class="nav-link hidden-md-up" href="login.htm"><i class="fa fa-user"></i></a>
               <a class="nav-link text-xs text-uppercase hidden-sm-down" href="#signup-modal" data-toggle="modal">Sign Up</a> <a class="nav-link text-xs text-uppercase hidden-sm-down" href="#login-modal" data-toggle="modal">Login</a> 
             </nav>
@@ -25,14 +34,6 @@
               </div>
             </div>
           </div>
-          <!--social media icons-->
-          <div class="nav nav-icons header-block flex-last">
-            <!--@todo: replace with company social media details-->
-            <a href="#" class="nav-link"> <i class="fa fa-twitter-square icon-1x"></i> <span class="sr-only">Twitter</span> </a>
-            <a href="#" class="nav-link"> <i class="fa fa-facebook-square icon-1x"></i> <span class="sr-only">Facebook</span> </a>
-            <a href="#" class="nav-link"> <i class="fa fa-linkedin-square icon-1x"></i> <span class="sr-only">Linkedin</span> </a>
-            <a href="#" class="nav-link"> <i class="fa fa-google-plus-square icon-1x"></i> <span class="sr-only">Google plus</span> </a>
-          </div>
         </div>
       </div>
       <div data-toggle="sticky">
@@ -45,7 +46,6 @@
             <button type="button" class="btn btn-link close-btn" data-toggle="search-form-close"><span class="sr-only">Close </span><i class="fa fa-times search-icon"></i></button>
           </form>
         </div>
-        
         <!--Header & Branding region-->
         <div class="header">
           <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
@@ -57,7 +57,6 @@
                   <span>There Are</span> No Others<span></span>
                 </h1>
               </a>
-              <div class="header-divider hidden-md-down"></div>
 <!--                mini text to right of the title w/ split color-->
 <!--              <div class="header-slogan hidden-md-down">How are we to treat others</div>-->
             </div>

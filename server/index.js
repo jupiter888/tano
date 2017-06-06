@@ -14,9 +14,72 @@ app.set('port', process.env.PORT ||3000);
 
 //when getting home route, uses hbars engine to 
 //render the view of home
+//home page
 app.get('/', function(req,res) {
         res.render('home');
 });
+
+//about page
+app.get('/about', function(req,res) {
+        res.render('about');
+});
+
+//beliefs
+app.get('/beliefs', function(req,res) {
+        res.render('beliefs');
+});
+
+//terms of service
+app.get('/tos', function(req,res) {
+        res.render('tos');
+});
+
+//privacy policy
+app.get('/privacy', function(req,res) {
+        res.render('privacy');
+});
+
+//donate
+app.get('/donate', function(req,res) {
+        res.render('donate');
+});
+
+//submissions
+app.get('/submit', function(req,res) {
+        res.render('submit');
+});
+
+//art
+app.get('/art', function(req,res) {
+        res.render('art');
+});
+
+//music
+app.get('/music', function(req,res) {
+        res.render('music');
+});
+
+//writings
+app.get('/writings', function(req,res) {
+        res.render('writings');
+});
+
+//education
+app.get('/education', function(req,res) {
+        res.render('education');
+});
+
+//events
+app.get('/events', function(req,res) {
+        res.render('events');
+});
+
+//contact
+app.get('/contact', function(req,res) {
+        res.render('contact');
+});
+
+
 
 
 

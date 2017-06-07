@@ -19,6 +19,8 @@ app.get('/', function(req,res) {
         res.render('home');
 });
 
+
+
 //about page
 app.get('/about', function(req,res) {
         res.render('about');
@@ -77,6 +79,16 @@ app.get('/events', function(req,res) {
 //contact
 app.get('/contact', function(req,res) {
         res.render('contact');
+});
+
+//404
+app.get('/404', function(req,res) {
+        res.render('404');
+});
+
+//500
+app.get('/500', function(req,res) {
+        res.render('500');
 });
 
 

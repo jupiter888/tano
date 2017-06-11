@@ -1,0 +1,22 @@
+<div id="map" style="height:350px;"></div>
+<script>
+
+function initMap() {
+  // 47.6163° N, 122.3216° W
+  var seattle = { lat: 47.6163, lng: -122.3216 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: seattle
+  });
+
+  google.maps.event.addListener(map, 'click', function(event) {
+    console.log(event.latLng);  // in event.latLng  you have the coordinates of click
+    $('#submit-lat').val(event.latLng.lat);
+    $('#submit-lng').val(event.latLng.lng);
+  });
+
+}
+
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmoZ50zirF_5ESDe5wAKeSICxnNHHqf0Y&callback=initMap"></script>

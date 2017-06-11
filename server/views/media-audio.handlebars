@@ -1,0 +1,22 @@
+<div id="content">
+<div class="container" id="media">
+  <br />
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="title-divider"><span>{{entry.title}} <span class="font-weight-normal text-muted">{{entry.author}}</span></span><small>{{entry.description}}</small></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 offset-md-4 col-sm-12">
+      <div style="display: table; margin: 0 auto;">
+<!--          html5 audio tag-->
+        <audio controls>
+          <source src="/submissions/{{entry.file}}" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+<br />
+</div>
+</div>

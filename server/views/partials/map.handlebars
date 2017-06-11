@@ -1,0 +1,35 @@
+<div id="map" style="height:600px;"></div>
+<script>
+
+function initMap() {
+  // 47.6163° N, 122.3216° W
+  var seattle = { lat: 47.6163, lng: -122.3216 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: seattle
+  });
+
+  var mapData = {{{cookedMapData}}};
+
+  // console.log(mapData);
+  mapData.forEach(function(ele, ind, arr){
+
+    ele.infoWindow = new google.maps.InfoWindow({
+      content: ele.content
+    });
+
+    ele.marker = new google.maps.Marker({
+      position: ele.position,
+      map: map,
+      title: ele.title
+    });
+
+    ele.marker.addListener("click", function() {
+      ele.infoWindow.open(map, ele.marker);
+    });
+  });
+}
+
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmoZ50zirF_5ESDe5wAKeSICxnNHHqf0Y&callback=initMap"></script>

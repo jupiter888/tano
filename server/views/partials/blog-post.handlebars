@@ -1,0 +1,36 @@
+<!-- month, day, year, author, title, detailLink, directLink, description -->
+
+<!-- Blog post -->
+<div class="row blog-post">
+  <div class="col-md-1 date-md">
+    <!-- Date desktop -->
+    <div class="date-wrapper"> <span class="date-m bg-primary">{{month}}</span> <span class="date-d"><small>{{day}}</small></span> </div>
+    <!-- Meta details desktop -->
+  </div>
+  <div class="col-md-11">
+    <h4 class="title media-heading">
+      <a href="{{detailLink}}">{{title}} <span class="text-muted"><small>{{entryType}}</small></span></a>
+    </h4>
+    <!-- Meta details mobile -->
+    <ul class="list-inline meta text-muted">
+      <li class="list-inline-item"><i class="fa fa-calendar"></i> {{day}} {{month}} {{year}}</li>
+    </ul>
+    <div class="row">
+      <div class="col-md-4 push-md-8">
+        <div class="blog-media">
+<!--          <a href="{{detailLink}}">
+            <img src="{{directLink}}" alt="{{description}}" class="img-fluid" />
+          </a> -->
+        </div>
+      </div>
+      <div class="col-md-8 pull-md-4">
+        <p>{{description}}</p>
+        <ul class="list-inline links">
+          <li class="list-inline-item">
+            <a href="{{detailLink}}" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

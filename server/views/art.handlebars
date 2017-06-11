@@ -1,1 +1,53 @@
-<h1>Art</h1>
+<div class="container" id="content">
+  {{> content-header }}
+  <div class="row">
+    <!--Blog Roll Content-->
+    <div class="col-md-9 blog-roll blog-list">
+
+      {{#each entries}}
+      {{> blog-post this}}
+      {{/each}}
+      <div class="pagination">
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Load More</button>
+        {{> footer-spacer-hack }}
+      </div>
+    </div>
+    <!--Sidebar-->
+    <div class="col-md-3 sidebar-right">
+<!--search form for later use-->
+      <!-- @Element: Search form -->
+      <!--
+      <div class="mb-4">
+        <form role="form">
+          <div class="input-group">
+            <label class="sr-only" for="search-field">Search</label>
+            <input type="search" class="form-control" id="search-field" placeholder="Search">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">Go!</button>
+            </span>
+          </div>
+        </form>
+      </div>
+-->
+      <!-- @Element: Archive -->
+<!--
+        these are static, will req wiring later with a dynamic route handler
+        similar to how media's dynamic routing is handled. 
+-->
+      <div class="mb-4">
+        <h4 class="title-divider">
+          <span>Archive</span>
+        </h4>
+        <ul class="list-unstyled list-lg tags">
+          <li><i class="fa fa-angle-right fa-fw"></i> <a href="#">April 2017</a> (68)</li>
+          <li><i class="fa fa-angle-right fa-fw"></i> <a href="#">March 2017</a> (16)</li>
+          <li><i class="fa fa-angle-right fa-fw"></i> <a href="#">February 2017</a> (26)</li>
+          <li><i class="fa fa-angle-right fa-fw"></i> <a href="#">January 2017</a> (43)</li>
+          <li><i class="fa fa-angle-right fa-fw"></i> <a href="#">December 2016</a> (47)</li>
+          <li><i class="fa fa-angle-right fa-fw"></i> <a href="#">November 2016</a> (86)</li>
+          <li><i class="fa fa-angle-right fa-fw"></i> <a href="#">October 2016</a> (68)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

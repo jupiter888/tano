@@ -1,0 +1,11 @@
+<!-- eleid, name, options, help -->
+<div class="form-group">
+  <label class="sr-only" for="{{{eleid}}}">{{{name}}}</label>
+  <select class="form-control" id="{{{eleid}}}">
+    <option value="" disabled selected>{{{name}}}</option>
+    {{#each options}}
+    <option>{{this}}</option>
+    {{/each}}
+  </select>
+  <small id="{{{eleid}}}-help" class="form-text text-muted">{{{help}}}</small>
+</div>

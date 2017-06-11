@@ -1,1 +1,28 @@
-<h1>Contact</h1>
+<div class="container" id="content">
+  {{> content-header }}
+  <div class="row">
+    <div class="col-md-6">
+      <form id="contact-form" action="#" role="form">
+        {{> form-group fname }}
+        {{> form-group femail }}
+        {{> form-group-textarea fmessage }}
+        <input type="button" class="btn btn-primary" value="Send Message">
+      </form>
+    </div>
+    <div class="col-md-6">
+      <p>
+        <abbr title="Phone"><i class="fa fa-phone"></i></abbr>
+        (206) 555-1234
+      </p>
+      <p>
+        <abbr title="Email"><i class="fa fa-envelope"></i></abbr>
+        info@therearenoothers.org
+      </p>
+      <p>
+        <abbr title="Address"><i class="fa fa-home"></i></abbr>
+        There Are No Others, Seattle, WA 98122
+      </p>
+    </div>
+  </div>
+</div>
+

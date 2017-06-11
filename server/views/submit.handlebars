@@ -1,0 +1,26 @@
+<div class="container" id="content">
+  {{> content-header }}
+   <form id="submit-form" action="#" role="form">
+    <div class="row">
+    <div class="col-md-6">
+        {{> form-group fname }}
+        {{> form-group femail }}
+        {{> form-group ftitle }}
+        {{> form-group-textarea fdescription }}
+
+    </div>
+    <div class="col-md-6">
+        {{> form-group-select ftype }}
+        {{> form-group-file ffile }}
+
+        <input id="submit-lat" type="hidden" name="lat" value="#">
+        <input id="submit-lng" type="hidden" name="lng" value="#">
+
+        <div class="form-group">{{> submit-map }}</div>
+        
+        <input type="button" class="btn btn-primary" value="Submit Piece">
+
+    </div>
+  </div>
+</form>
+</div>
